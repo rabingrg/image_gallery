@@ -22,4 +22,4 @@ This project is an image gallery built with React, TypeScript, and Tailwind CSS.
 
     npm start
 
-  Open your browser and go to http://localhost:3000 to see the image gallery in action.
+  Open your browser and go to http://localhost:5173 to see the image gallery in action.
