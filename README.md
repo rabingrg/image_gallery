@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Image Gallery with Pagination
+    This project is an image gallery built with React, TypeScript, and Tailwind CSS. It fetches images from the Picsum API and displays them with pagination. The project uses ReactPaginate for paginated navigation and includes a skeleton loader to enhance the user experience while the images are loading.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# # Features
+    Fetches random images from Picsum API.
+    Displays 100 images per page with pagination support.
+    Shows a skeleton loader while images are being fetched.
+    Scrolls to the top of the page when navigating between pages.
 
-Currently, two official plugins are available:
+# # Tech Stack
+    React: A JavaScript library for building user interfaces.
+    TypeScript: A typed superset of JavaScript for better tooling and maintainability.
+    Tailwind CSS: A utility-first CSS framework for styling.
+    React Paginate: For pagination functionality.
+    Axios: For making HTTP requests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# # Installation
 
-## Expanding the ESLint configuration
+  To run this project locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  Clone the repository:
+  
+    git clone https://github.com/yourusername/image-gallery.git
 
-- Configure the top-level `parserOptions` property like this:
+  Navigate to the project directory:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    cd image-gallery
+    
+  Install dependencies:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    npm install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  Run the development server:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    npm start
+
+  Open your browser and go to http://localhost:3000 to see the image gallery in action.
