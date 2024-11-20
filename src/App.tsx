@@ -3,7 +3,6 @@ import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { ImageType } from "./utils/types";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
 import Gallery from "./components/ImageGallery";
 
 const App: FC = () => {
