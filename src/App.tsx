@@ -61,7 +61,7 @@ const App: FC = () => {
     <div className="p-5 flex flex-col gap-2">
       <h1 className="text-2xl font-bold text-center mb-4">Image Gallery</h1>
       <Gallery images={images} isLoading={isLoading} />
-      {totalImages > 0 && !isLoading && (
+      {!!images?.length && (
         <ReactPaginate
           pageCount={totalPages}
           onPageChange={handlePageChange}
